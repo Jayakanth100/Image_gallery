@@ -1,5 +1,8 @@
 import { ImageContext } from "../App"
 import {useContext} from 'react'
+import { FaInstagram } from 'react-icons/fa'
+import { FaTwitter } from 'react-icons/fa'
+import { FaHeart } from 'react-icons/fa'
 
 export default function Modal({value , data}) {
 const {setVisvalue} = useContext(ImageContext)
@@ -25,20 +28,20 @@ const {setVisvalue} = useContext(ImageContext)
       <div onKeyDown = {handleCloseKey} className = "bg-white max-w-sm rounded overflow-hidden shadow-lg">
         <img alt ="" className = "h-72 w-full object-cover rounded-lg shadow-md" src={data.data.urls.small}></img>  
         
-        <div className="p-4 grid grid-cols-2 gap-6 overflow-hidden max-w-sm">
+        <div className="p-6 grid grid-cols-2 gap-6 overflow-hidden max-w-sm">
           <div>
             <b><h1 className="font-montserrat">{data.data.user.username}</h1></b>
             <b><h1 className="font-popins">@ {data.data.user.username}</h1></b>
           </div>
           <div>
-            <b><h1 className="font-popins"><i class="fa-brands fa-instagram"></i> { 
+            <b><h1 className="font-popins" ><i><FaInstagram/></i>{ 
 data.data.user.instagram_username
 }</h1></b>
-            <b><h1 className="font-popins"><i class="fa-brands fa-twitter"></i> {data.data.user.twitter_username}</h1></b>
+            <b><h1 className="font-popins"><FaTwitter/>{data.data.user.twitter_username}</h1></b>
           </div>
 
           <div>
-          <i class="fa-solid fa-heart"></i> {data.data.likes}
+          <FaHeart/>{data.data.likes}
           </div>
 
           <div className="justify-center">
