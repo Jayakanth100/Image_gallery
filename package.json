@@ -2,7 +2,7 @@
   "name": "rapp",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://Jayakanth100.github.io/Image_gallery",
+  "homepage": "http://Jayakanth100.github.io/Image_gallery",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-regular-svg-icons": "^6.3.0",
@@ -14,6 +14,7 @@
     "axios": "^1.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
